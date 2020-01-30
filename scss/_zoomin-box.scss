@@ -1,0 +1,78 @@
+@import"./variables";
+
+.zoomin-box{
+    width: 40rem;
+    height: 25rem;
+    float: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    left: 3rem;
+    top:50rem;
+  }
+  .zoomin-box .overlay {
+    width: 40rem;
+    height:25rem;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .zoomin-box:hover .overlay {
+    background-color: rgba(170,170,170,0.3);
+  }
+  
+  .zoomin-box h2, .zoomin-box img {
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .zoomin-box img {
+    display: block;
+    position: relative;
+    transform: scale(1.1);
+    width:40rem;
+  }
+  
+  .zoomin-box:hover img {
+    transform: scale(1);
+  }
+  
+  .zoomin-box h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    padding: 5px;
+  }
+  
+  .zoomin-box a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0.02rem solid #fff;
+    margin: 0.1rem 0 0 0;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: scale(1.5);
+    transition: all 0.4s ease-in-out;
+    font-weight: bold;
+    height: 18rem;
+    width: 32rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    padding: 0.5rem;
+  }
+  
+  .zoomin-box:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: scale(1);
+    background-color: rgba(0,0,0,0.4);
+  }    

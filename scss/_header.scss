@@ -1,0 +1,22 @@
+@import"./variables";
+
+header{
+    background-image: url("/dist/css/img/shanghai.jpg");
+    display:flex;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+h1{
+    text-align: center;
+    color: rgba((color(primary)), 0.9);
+    border-color: rgba((color(primary)), 0.5);
+    border-style: solid;
+    font-size: 4rem;
+    padding: .5rem;
+}
+h3{
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+@import"./_variables.scss";
+
+.school-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pictures{
+    flex-flow: row;
+}
+
+.flex-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.scenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:5rem;
+    width: 90rem;
+    background-color: rgba(color(primary), 0.5);
+}
+#haikyuu{
+    font-size: 2rem;
+    border-style: solid;
+    border-color: rgba(color(primary),0.6);
+    padding:3rem;
+    text-align: center;
+    width:50rem;
+}
+.scene1{
+    width: 25rem;
+}
+.scene2{
+    width:25rem;
+}
+.scene3{
+    width: 25rem;
+}
+#flex-child1{
+    flex-grow: 1;
+    width:32rem;
+}
+#flex-child2{
+    flex-grow: 1;
+    width:32rem;
+
+}
+#flex-child3{
+    flex-grow: 1;
+    width:32rem;
+}
+#flex-child4{
+    flex-grow: 1;
+    width:32rem;
+}
+#flex-child5{
+    flex-grow:1;
+    width:32rem;
+}

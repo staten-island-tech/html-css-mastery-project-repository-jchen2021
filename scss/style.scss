@@ -1,0 +1,100 @@
+@import"./_variables.scss";
+@import"./_header.scss";
+@import"./_flexbox.scss";
+@import"./_hover1.scss";
+@import"./_zoomin-box.scss";
+@import"./_slideup.scss";
+@import"./_circle.scss";
+@import"./flip";
+
+
+html{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    background-image: url("/dist/css/img/shanghai.jpg");
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* .text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(color(primary),0.8);
+} */
+#container{
+    width: 50%;
+    background-color: rgba(color(primary),0.2);
+    box-sizing: border-box;
+}
+
+.text{
+    font-size: 3rem;
+    color: rgba(color(secondary),0.9);
+    padding: 0.5rem;
+    margin-bottom: 0;
+}
+.subtitle{
+    font-size: 2.5rem;
+    color: rgba(color(secondary),0.8);
+    padding: 0.5rem;
+    margin-top: 0;
+}
+body {
+	margin: 0px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 3rem;
+    height: 5rem;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    align-items: center;
+  }
+  
+  .flip-card-inner {
+    width: 3rem;
+    height: 5rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-card-front {
+    width: 3rem;
+    height: 5rem;
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back {
+    width: 3rem;
+    height: 5rem;
+    transform: rotateY(180deg);
+  }
