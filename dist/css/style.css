@@ -1,5 +1,4 @@
 header {
-  background-image: url(".../css/img/shanghai.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,19 +12,27 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100rem;
 }
 
-h1 {
+/* h1{
+    text-align: center;
+    color: rgba((color(primary)), 0.9);
+    border-color: rgba((color(primary)), 0.5);
+    border-style: solid;
+    font-size: 4rem;
+    padding: .5rem;
+} */
+h3 {
   text-align: center;
-  color: rgba(35, 69, 97, 0.9);
-  border-color: rgba(35, 69, 97, 0.5);
+}
+
+.title {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
   border-style: solid;
   font-size: 4rem;
   padding: .5rem;
-}
-
-h3 {
-  text-align: center;
 }
 
 .school-logos {
@@ -517,6 +524,8 @@ html {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
+  background-image: url("/dist/css/img/test4.png");
+  background-attachment: fixed;
 }
 
 section {
