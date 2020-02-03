@@ -1,15 +1,14 @@
 @import"./variables";
 
 .zoomin-box{
-    width: 40rem;
-    height: 25rem;
+    height: 30rem;
     float: none;
     overflow: hidden;
     position: relative;
     text-align: center;
     cursor: default;
     left: 3rem;
-    top:50rem;
+
   }
   .zoomin-box .overlay {
     width: 40rem;

@@ -22,9 +22,18 @@ h3{
 }
 
 .title{
-    text-align: left;
+    font-family: 'Fredericka the Great', cursive;
+    width:100rem;
+    height:80rem;
+    text-align: center;
     color: rgba((color(clear)), 0.9);
-    border-style: solid;
-    font-size: 4rem;
-    padding: .5rem;
+    font-size: 3rem;
+    @include tablet {
+        font-size: 5rem;
+        letter-spacing: 1rem;
+      }
+      @include laptop {
+        font-size: 6rem;
+        letter-spacing: 1.3rem;
+      }
 }
