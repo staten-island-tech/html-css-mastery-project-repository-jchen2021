@@ -12,7 +12,19 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100rem;
+  height: 50rem;
+}
+
+@media (min-width: 600px) {
+  header {
+    height: 100rem;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    height: 120rem;
+  }
 }
 
 /* h1{
@@ -29,8 +41,6 @@ h3 {
 
 .title {
   font-family: 'Fredericka the Great', cursive;
-  width: 100rem;
-  height: 80rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
   font-size: 3rem;
@@ -193,18 +203,17 @@ h3 {
 }
 
 .zoomin-box {
-  height: 30rem;
+  height: 32rem;
   float: none;
   overflow: hidden;
   position: relative;
   text-align: center;
   cursor: default;
-  left: 3rem;
 }
 
 .zoomin-box .overlay {
   width: 40rem;
-  height: 25rem;
+  height: 28rem;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -260,8 +269,6 @@ h3 {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   font-weight: bold;
-  height: 18rem;
-  width: 32rem;
   position: absolute;
   top: 3rem;
   left: 3rem;
@@ -623,8 +630,13 @@ html {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
+}
+
+body {
   background-image: url("/dist/css/img/test4.png");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 section {

@@ -6,7 +6,13 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center; 
-    height:100rem;
+    height:50rem;
+    @include tablet {
+        height:100rem;
+      }
+      @include laptop {
+        height:120rem;
+      }
 }
 
 /* h1{
@@ -23,8 +29,6 @@ h3{
 
 .title{
     font-family: 'Fredericka the Great', cursive;
-    width:100rem;
-    height:80rem;
     text-align: center;
     color: rgba((color(clear)), 0.9);
     font-size: 3rem;
