@@ -1,4 +1,8 @@
 header {
+  background-image: url("/dist/css/img/test4.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,13 +19,13 @@ header {
   height: 72rem;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 800px) {
   header {
     height: 100rem;
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1200px) {
   header {
     height: 120rem;
   }
@@ -46,14 +50,14 @@ h3 {
   font-size: 3rem;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 800px) {
   .title {
     font-size: 5rem;
     letter-spacing: 1rem;
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1200px) {
   .title {
     font-size: 6rem;
     letter-spacing: 1.3rem;
@@ -203,7 +207,8 @@ h3 {
 }
 
 .zoomin-box {
-  height: 32rem;
+  width: 40rem;
+  height: 25rem;
   float: none;
   overflow: hidden;
   position: relative;
@@ -213,7 +218,7 @@ h3 {
 
 .zoomin-box .overlay {
   width: 40rem;
-  height: 28rem;
+  height: 25rem;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -269,6 +274,8 @@ h3 {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   font-weight: bold;
+  height: 18rem;
+  width: 32rem;
   position: absolute;
   top: 3rem;
   left: 3rem;
@@ -556,7 +563,7 @@ h3 {
           align-items: center;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1200px) {
   .user-gallery {
     height: 90vh;
   }
@@ -568,19 +575,19 @@ h3 {
   text-transform: uppercase;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 800px) {
   .user-gallery-header {
     font-size: 3rem;
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1200px) {
   .user-gallery-header {
     font-size: 4rem;
   }
 }
 
-@media (min-width: 1100px) {
+@media (max-width: 2000px) {
   .user-gallery-header {
     font-size: 5rem;
   }
@@ -591,10 +598,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -603,9 +610,9 @@ h3 {
   margin: 0 auto;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1200px) {
   .user-gallery-gallery {
-    height: 60%;
+    height: 50%;
     width: 90%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -615,11 +622,11 @@ h3 {
 }
 
 .user-gallery-gallery .user-gallery-image {
-  width: 90%;
+  width: 32%;
   padding: 1rem;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1200px) {
   .user-gallery-gallery .user-gallery-image {
     height: 30rem;
     width: auto;
