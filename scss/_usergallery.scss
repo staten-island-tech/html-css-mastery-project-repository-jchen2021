@@ -37,11 +37,19 @@
         width: 90%;
         flex-direction: row;
     }
+    @include desktop{
+        height:45%;
+        flex-direction: row;
+    }
     .user-gallery-image{
         width: 32%;
         padding: 1rem;
         @include laptop{
             height: 30rem;
+            width: auto;
+        }
+        @include desktop{
+            height:30rem;
             width: auto;
         }
     }

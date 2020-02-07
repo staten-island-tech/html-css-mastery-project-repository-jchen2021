@@ -621,12 +621,29 @@ h3 {
   }
 }
 
+@media (max-width: 2000px) {
+  .user-gallery-gallery {
+    height: 45%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .user-gallery-gallery .user-gallery-image {
   width: 32%;
   padding: 1rem;
 }
 
 @media (max-width: 1200px) {
+  .user-gallery-gallery .user-gallery-image {
+    height: 30rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 2000px) {
   .user-gallery-gallery .user-gallery-image {
     height: 30rem;
     width: auto;
