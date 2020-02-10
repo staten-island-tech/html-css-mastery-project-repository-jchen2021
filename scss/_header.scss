@@ -1,21 +1,17 @@
 @import"./variables";
 
 header{
-    background-image: url("/dist/css/img/test4.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
     display:flex;
     background-attachment: fixed;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; 
-    height:72rem;
+    height:50rem;
     @include tablet {
-        height:100rem;
+        height:80rem;
       }
       @include laptop {
-        height:120rem;
+        height:100rem;
       }
 }
 

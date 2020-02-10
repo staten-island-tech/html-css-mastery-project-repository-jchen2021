@@ -1,8 +1,4 @@
 header {
-  background-image: url("/dist/css/img/test4.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,18 +12,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 72rem;
+  height: 50rem;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 600px) {
   header {
-    height: 100rem;
+    height: 80rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 900px) {
   header {
-    height: 120rem;
+    height: 100rem;
   }
 }
 
@@ -50,14 +46,14 @@ h3 {
   font-size: 3rem;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 600px) {
   .title {
     font-size: 5rem;
     letter-spacing: 1rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 900px) {
   .title {
     font-size: 6rem;
     letter-spacing: 1.3rem;
@@ -207,7 +203,7 @@ h3 {
 }
 
 .zoomin-box {
-  width: 40rem;
+  width: 90%;
   height: 25rem;
   float: none;
   overflow: hidden;
@@ -563,7 +559,7 @@ h3 {
           align-items: center;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 900px) {
   .user-gallery {
     height: 90vh;
   }
@@ -575,19 +571,19 @@ h3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 600px) {
   .user-gallery-header {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 900px) {
   .user-gallery-header {
     font-size: 4rem;
   }
 }
 
-@media (max-width: 2000px) {
+@media (min-width: 1100px) {
   .user-gallery-header {
     font-size: 5rem;
   }
@@ -598,10 +594,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -610,9 +606,9 @@ h3 {
   margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 900px) {
   .user-gallery-gallery {
-    height: 50%;
+    height: 60%;
     width: 90%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -621,29 +617,12 @@ h3 {
   }
 }
 
-@media (max-width: 2000px) {
-  .user-gallery-gallery {
-    height: 45%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 .user-gallery-gallery .user-gallery-image {
-  width: 32%;
+  width: 70%;
   padding: 1rem;
 }
 
-@media (max-width: 1200px) {
-  .user-gallery-gallery .user-gallery-image {
-    height: 30rem;
-    width: auto;
-  }
-}
-
-@media (max-width: 2000px) {
+@media (min-width: 900px) {
   .user-gallery-gallery .user-gallery-image {
     height: 30rem;
     width: auto;
@@ -654,6 +633,8 @@ html {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -661,6 +642,8 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: conver;
+  background-color: black;
 }
 
 section {
