@@ -5,6 +5,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include desktop{
+        height: 200vh;
+        width: auto;
+    }
     @include laptop{
         height: 90vh;
     }
@@ -32,6 +36,11 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    @include desktop{
+        width:80%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     @include laptop{
         height: 60%;
         width: 90%;
@@ -40,6 +49,10 @@
     .user-gallery-image{
         width: 70%;
         padding: 1rem;
+        @include desktop{
+            height: 35rem;
+            padding: 2%;
+        }
         @include laptop{
             height: 30rem;
             width: auto;

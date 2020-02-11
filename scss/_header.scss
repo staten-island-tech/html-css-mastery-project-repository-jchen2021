@@ -32,12 +32,16 @@ h3{
     text-align: center;
     color: rgba((color(clear)), 0.9);
     font-size: 3rem;
-    @include tablet {
+    @include desktop{
+      font-size:6rem;
+      padding: 3%;
+    }
+      @include laptop {
+        font-size: 12rem;
+        letter-spacing: 1.3rem;
+      }
+      @include tablet {
         font-size: 5rem;
         letter-spacing: 1rem;
-      }
-      @include laptop {
-        font-size: 6rem;
-        letter-spacing: 1.3rem;
       }
 }
