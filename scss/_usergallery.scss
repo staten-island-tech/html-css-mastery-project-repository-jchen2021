@@ -15,17 +15,20 @@
 }
 
 .user-gallery-header{
+    padding:1%;
     font-size: 2rem;
     color: white;
     text-transform: uppercase;
-    @include tablet{
-        font-size: 3rem;
+    
+    @include desktop{
+        font-size: 5rem;
     }
+
     @include laptop{
         font-size: 4rem;
     }
-    @include desktop{
-        font-size: 5rem;
+    @include tablet{
+        font-size: 3rem;
     }
 }
 
@@ -46,16 +49,22 @@
         width: 90%;
         flex-direction: row;
     }
+    @include tablet{
+        height:60%;
+        flex-direction: column;
+    }
     .user-gallery-image{
         width: 70%;
         padding: 1rem;
         @include desktop{
-            height: 35rem;
+            width:30%;
             padding: 2%;
         }
         @include laptop{
-            height: 30rem;
-            width: auto;
+            width: 30%;
+        }
+        @include tablet{
+            width:70%;
         }
     }
 }

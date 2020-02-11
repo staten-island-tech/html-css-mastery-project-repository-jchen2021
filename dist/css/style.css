@@ -12,18 +12,23 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50rem;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 2000px) {
   header {
-    height: 80rem;
+    height: 100%;
   }
 }
 
 @media (max-width: 1000px) {
   header {
-    height: 100rem;
+    height: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  header {
+    height: 100%;
   }
 }
 
@@ -48,21 +53,21 @@ h3 {
 
 @media (max-width: 2000px) {
   .title {
-    font-size: 6rem;
-    padding: 3%;
+    font-size: 7rem;
+    letter-spacing: 1.3rem;
   }
 }
 
 @media (max-width: 1000px) {
   .title {
-    font-size: 12rem;
-    letter-spacing: 1.3rem;
+    font-size: 6rem;
+    letter-spacing: 1.2rem;
   }
 }
 
 @media (max-width: 780px) {
   .title {
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing: 1rem;
   }
 }
@@ -580,14 +585,15 @@ h3 {
 }
 
 .user-gallery-header {
+  padding: 1%;
   font-size: 2rem;
   color: white;
   text-transform: uppercase;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 2000px) {
   .user-gallery-header {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
@@ -597,9 +603,9 @@ h3 {
   }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 780px) {
   .user-gallery-header {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
@@ -644,6 +650,16 @@ h3 {
   }
 }
 
+@media (max-width: 780px) {
+  .user-gallery-gallery {
+    height: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .user-gallery-gallery .user-gallery-image {
   width: 70%;
   padding: 1rem;
@@ -651,15 +667,20 @@ h3 {
 
 @media (max-width: 2000px) {
   .user-gallery-gallery .user-gallery-image {
-    height: 35rem;
+    width: 30%;
     padding: 2%;
   }
 }
 
 @media (max-width: 1000px) {
   .user-gallery-gallery .user-gallery-image {
-    height: 30rem;
-    width: auto;
+    width: 30%;
+  }
+}
+
+@media (max-width: 780px) {
+  .user-gallery-gallery .user-gallery-image {
+    width: 70%;
   }
 }
 
