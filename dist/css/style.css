@@ -573,7 +573,7 @@ h3 {
 
 @media (max-width: 2000px) {
   .user-gallery {
-    height: 200vh;
+    height: 100vh;
     width: auto;
   }
 }
