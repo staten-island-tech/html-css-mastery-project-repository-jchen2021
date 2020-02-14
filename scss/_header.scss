@@ -1,11 +1,13 @@
 @import"./variables";
 
 header{
+    background-image: url("/dist/css/img/skyline.jpg");
     display:flex;
     background-attachment: fixed;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; 
+    background-clip: text;
     @include desktop{
       height: 100%;
     }

@@ -1,4 +1,5 @@
 header {
+  background-image: url("/dist/css/img/skyline.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +13,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-clip: text;
 }
 
 @media (max-width: 2000px) {
@@ -555,7 +557,7 @@ h3 {
           transform: rotateY(180deg);
 }
 
-.user-gallery {
+.general {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,19 +574,19 @@ h3 {
 }
 
 @media (max-width: 2000px) {
-  .user-gallery {
+  .general {
     height: 100vh;
     width: auto;
   }
 }
 
 @media (max-width: 1000px) {
-  .user-gallery {
+  .general {
     height: 90vh;
   }
 }
 
-.user-gallery-header {
+.general-header {
   padding: 1%;
   font-size: 2rem;
   color: white;
@@ -592,24 +594,24 @@ h3 {
 }
 
 @media (max-width: 2000px) {
-  .user-gallery-header {
+  .general-header {
     font-size: 5rem;
   }
 }
 
 @media (max-width: 1000px) {
-  .user-gallery-header {
+  .general-header {
     font-size: 4rem;
   }
 }
 
 @media (max-width: 780px) {
-  .user-gallery-header {
+  .general-header {
     font-size: 3rem;
   }
 }
 
-.user-gallery-gallery {
+.general-gallery {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,7 +629,7 @@ h3 {
 }
 
 @media (max-width: 2000px) {
-  .user-gallery-gallery {
+  .general-gallery {
     width: 80%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -640,7 +642,7 @@ h3 {
 }
 
 @media (max-width: 1000px) {
-  .user-gallery-gallery {
+  .general-gallery {
     height: 60%;
     width: 90%;
     -webkit-box-orient: horizontal;
@@ -651,7 +653,7 @@ h3 {
 }
 
 @media (max-width: 780px) {
-  .user-gallery-gallery {
+  .general-gallery {
     height: 60%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -660,26 +662,26 @@ h3 {
   }
 }
 
-.user-gallery-gallery .user-gallery-image {
+.general-gallery .general-image {
   width: 70%;
   padding: 1rem;
 }
 
 @media (max-width: 2000px) {
-  .user-gallery-gallery .user-gallery-image {
+  .general-gallery .general-image {
     width: 30%;
     padding: 2%;
   }
 }
 
 @media (max-width: 1000px) {
-  .user-gallery-gallery .user-gallery-image {
+  .general-gallery .general-image {
     width: 30%;
   }
 }
 
 @media (max-width: 780px) {
-  .user-gallery-gallery .user-gallery-image {
+  .general-gallery .general-image {
     width: 70%;
   }
 }
