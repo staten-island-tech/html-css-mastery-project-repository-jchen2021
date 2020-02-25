@@ -87,6 +87,8 @@ h3 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 .pictures {
@@ -104,29 +106,33 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 .scenes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 5rem;
   width: 90rem;
   background-color: rgba(35, 69, 97, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 #haikyuu {
@@ -746,8 +752,87 @@ section {
   margin-top: 0;
 }
 
-body {
-  margin: 0px;
+.session3 {
+  background-color: brown;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  -webkit-box-shadow: cadetblue;
+          box-shadow: cadetblue;
+}
+
+.wrapper {
+  padding: 1rem;
+  max-width: 1200px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.parent {
+  width: 100%;
+  margin: 200px;
+  height: 100%;
+  border: 4px solid  #fff;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.child::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.bg-one {
+  background-image: url("/dist/css/img/roof.jpg");
+}
+
+.back-detail {
+  display: none;
+  font-size: 4rem;
+  color: burlywood;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50rem;
+  cursor: pointer;
+}
+
+parent:hover .child, .parent:focus .chid {
+  -webkit-transform: scale(1, 3);
+          transform: scale(1, 3);
+}
+
+parent:hover .child::before, .parent:focus .chid::before {
+  display: block;
+}
+
+parent:hover .back-detail, .parent:focus .back-detail {
+  display: block;
 }
 
 .flip-card {

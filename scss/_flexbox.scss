@@ -1,11 +1,7 @@
 @import"./_variables.scss";
 
 .school-logos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    
+    @include flex-collum{}
 }
 
 .pictures{
@@ -13,19 +9,16 @@
 }
 
 .flex-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-collum{    }
 }
 .scenes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-collum{
     padding:5rem;
     width: 90rem;
     background-color: rgba(color(primary), 0.5);
+
+    }
+    
 }
 #haikyuu{
     font-size: 2rem;

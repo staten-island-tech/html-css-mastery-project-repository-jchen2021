@@ -29,3 +29,21 @@ $desktop: 2000px;
       @content;
     }
   }
+
+  @mixin flex-collum(){
+    @content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;  
+    padding: 0;
+    margin: 0;  
+  }
+  @mixin flex-row (){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;  
+  }
