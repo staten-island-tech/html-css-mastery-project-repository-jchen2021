@@ -2,7 +2,7 @@
 
 
 .tiles {
-	width: 30rem;
+	width: 30%;
 	font-size: 0;
 	position: absolute;
 	transform: translate(-50%, -50%);
@@ -13,7 +13,7 @@
 	opacity: .99;
 	overflow: hidden;
 	position: relative;
-	border-radius: 3px;
+	border-radius: 1px;
 	box-shadow: 0 0 1rem rgba(color(basic), 0.05);
   }
 .tiles .tile:before {
