@@ -9,14 +9,14 @@
 }
 
 .flex-block{
-    @include flex-collum{    }
+    @include flex-collum{    
+    }
 }
 .scenes{
-    @include flex-collum{
+    @include flex-row{
     padding:5rem;
-    width: 90rem;
+    width: 80%;
     background-color: rgba(color(primary), 0.5);
-
     }
     
 }

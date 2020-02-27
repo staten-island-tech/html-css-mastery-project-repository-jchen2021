@@ -87,8 +87,6 @@ h3 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0;
-  margin: 0;
 }
 
 .pictures {
@@ -111,28 +109,24 @@ h3 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0;
-  margin: 0;
 }
 
 .scenes {
   padding: 5rem;
-  width: 90rem;
+  width: 80%;
   background-color: rgba(35, 69, 97, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0;
-  margin: 0;
 }
 
 #haikyuu {
@@ -754,7 +748,6 @@ section {
 
 .session3 {
   background-color: brown;
-  height: 80px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -773,7 +766,6 @@ section {
 
 .parent {
   width: 100%;
-  margin: 200px;
   height: 100%;
   border: 4px solid  #fff;
   overflow: hidden;
@@ -819,7 +811,7 @@ section {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 50rem;
+  height: 20%;
   cursor: pointer;
 }
 
