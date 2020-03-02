@@ -11,8 +11,8 @@ $colors:(
 
 $anim-speed: 0.3s;
 $tablet: 780px;
-$laptop:  1000px;
-$desktop: 2000px;
+$laptop:  900px;
+$desktop: 1500px;
 
 @mixin tablet{
     @media(max-width: #{$tablet}){

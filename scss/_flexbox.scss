@@ -1,7 +1,18 @@
 @import"./_variables.scss";
 
 .school-logos{
-    @include flex-collum{}
+    @include flex-collum{
+    justify-content: space-evenly;
+    }
+    @include desktop{
+        align-items: center;
+    }
+    @include laptop{
+        align-items: center;
+    }
+    @include tablet{
+        align-items: center;
+    }
 }
 
 .pictures{

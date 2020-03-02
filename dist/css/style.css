@@ -16,13 +16,13 @@ header {
   background-clip: text;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
   header {
     height: 100%;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   header {
     height: 100%;
   }
@@ -53,14 +53,14 @@ h3 {
   font-size: 3rem;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
   .title {
     font-size: 7rem;
     letter-spacing: 1.3rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .title {
     font-size: 6rem;
     letter-spacing: 1.2rem;
@@ -75,6 +75,9 @@ h3 {
 }
 
 .school-logos {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +90,30 @@ h3 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 1500px) {
+  .school-logos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .school-logos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 780px) {
+  .school-logos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .pictures {
@@ -565,22 +592,21 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
   .general {
     height: 100vh;
     width: auto;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .general {
     height: 90vh;
   }
@@ -591,15 +617,16 @@ h3 {
   font-size: 2rem;
   color: white;
   text-transform: uppercase;
+  text-align: center;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
   .general-header {
     font-size: 5rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .general-header {
     font-size: 4rem;
   }
@@ -631,7 +658,7 @@ h3 {
   cursor: default;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
   .general-gallery {
     width: 80%;
     -webkit-box-orient: horizontal;
@@ -644,7 +671,7 @@ h3 {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .general-gallery {
     height: 60%;
     width: 90%;
@@ -670,14 +697,14 @@ h3 {
   padding: 1rem;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
   .general-gallery .general-gallery img {
     width: 30%;
     padding: 2%;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .general-gallery .general-gallery img {
     width: 30%;
   }
@@ -735,14 +762,14 @@ h3 {
   padding: 1rem;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
   .user-gallery-gallery img .user-gallery-image {
     width: 30%;
     padding: 2%;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .user-gallery-gallery img .user-gallery-image {
     width: 30%;
   }
@@ -852,27 +879,32 @@ section {
   margin-top: 0;
 }
 
-.session3 {
-  background-color: brown;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 99;
-  -webkit-box-shadow: cadetblue;
-          box-shadow: cadetblue;
+.section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .wrapper {
   padding: 1rem;
-  max-width: 50rem;
+  width: 100%;
   text-align: center;
   margin: 50px auto;
-  height: 50rem;
+  height: 100vh;
 }
 
 .parent {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 25%;
   border: 4px solid  #fff;
   overflow: hidden;
   position: relative;
@@ -888,6 +920,8 @@ section {
   background-repeat: no-repeat;
   -webkit-transition: all .5s;
   transition: all .5s;
+  top: 0;
+  left: 0;
 }
 
 .child::before {
@@ -905,9 +939,20 @@ section {
   background-image: url("/dist/css/img/roof.jpg");
 }
 
+.bg-two {
+  background-image: url("/dist/css/img/skyline.jpg");
+}
+
+.bg-three {
+  background-image: url("/dist/css/img/xiongmao.jpg");
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .back-detail {
   display: none;
-  font-size: 4rem;
+  font-size: 3rem;
   color: burlywood;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -921,16 +966,16 @@ section {
   cursor: pointer;
 }
 
-parent:hover .child, .parent:focus .chid {
+.parent:hover .child, .parent:focus .chid {
   -webkit-transform: scale(1, 3);
           transform: scale(1, 3);
 }
 
-parent:hover .child::before, .parent:focus .chid::before {
+.parent:hover .child::before, .parent:focus .chid::before {
   display: block;
 }
 
-parent:hover .back-detail, .parent:focus .back-detail {
+.parent:hover .back-detail, .parent:focus .back-detail {
   display: block;
 }
 

@@ -3,7 +3,7 @@
 .general{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     @include desktop{
         height: 100vh;
@@ -19,6 +19,7 @@
     font-size: 2rem;
     color: white;
     text-transform: uppercase;
+    text-align: center;
     
     @include desktop{
         font-size: 5rem;
