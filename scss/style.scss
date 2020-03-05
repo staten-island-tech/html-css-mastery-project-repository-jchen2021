@@ -58,22 +58,40 @@ section{
 }
 
 .section3{
-  @include flex-collum{
+  height: 100%;
 
+  @include flex-collum{
   }
+  @include desktop{
+    @include flex-row{
+      justify-content: space-around;
+    }
+  }
+  @include laptop{
+    @include flex-row{
+      justify-content: space-around;
+    }
+  }
+  @include tablet{
+    @include flex-collum{
+      justify-content: space-around;
+
+    }
+  }
+  
 }
 
 
 .wrapper{
   padding: 1rem;
   width: 100%;
-  text-align: center;
+  align-items: center;
   margin: 50px auto;
   height: 100vh;
 }
 .parent {
   width: 30%;
-  height: 25%;
+  height: 90%;
   border: 4px solid  #fff;
   overflow: hidden;
   position: relative;

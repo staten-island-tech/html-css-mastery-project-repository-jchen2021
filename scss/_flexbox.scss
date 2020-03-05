@@ -1,11 +1,16 @@
 @import"./_variables.scss";
 
 .school-logos{
+
     @include flex-collum{
     justify-content: space-evenly;
     }
     @include desktop{
+        @include flex-row{
+
+        }
         align-items: center;
+        
     }
     @include laptop{
         align-items: center;
@@ -16,11 +21,33 @@
 }
 
 .pictures{
-    flex-flow: row;
+    width:95%;
+    height: 100%;
+    align-items: center;
+    @include flex-row{
+        justify-content: space-around;
+    }
+    @include desktop{
+        @include flex-collum{
+
+        }
+    }
+    @include laptop{
+        @include flex-row{}
+    }
+    @include tablet{
+        @include flex-collum{}
+    }
+
 }
 
 .flex-block{
     @include flex-collum{    
+    }
+    @include desktop{
+        @include flex-row{
+            
+        }
     }
 }
 .scenes{
@@ -28,6 +55,11 @@
     padding:5rem;
     width: 80%;
     background-color: rgba(color(primary), 0.5);
+    }
+    @include desktop{
+        @include flex-row{
+
+        }
     }
     
 }
