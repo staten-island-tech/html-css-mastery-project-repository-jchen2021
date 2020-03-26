@@ -1,0 +1,87 @@
+@import"./_variables.scss";
+
+.wrapper{
+    width: 90%;
+    height:90%;
+    align-items: center;
+    @include flex-row{
+  
+    }
+    @include tablet{
+      @include flex-collum{
+  
+      }
+    }
+  }
+  .parent {
+    width: 30%;
+    height: 100%;
+    border: 4px solid  #fff;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    @include tablet{
+      height:30%;
+      width:100%;
+    }
+    
+  }
+  .child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+    position: relative;
+  
+  }
+  .child::after {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    background-color: 
+    rgba(52,73,94,0.75);
+    z-index: -99;
+  }
+  .bg-one {
+    background-image: url("/dist/css/img/wuha\(\).jpg");
+    background-position: center;
+  }
+  .bg-two{
+    background-image: url("/dist/css/img/red\ wall.jpg");
+    background-position: center;
+  }
+  .bg-three{
+    background-image: url("/dist/css/img/xiongmao.jpg");
+    background-position: center;
+  }
+  
+  .back-detail{
+    display: none;
+    font-size: 3rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+  }
+  
+  .parent:hover .child{
+    transform: scale(1,1.1);
+    
+  }
+  .parent:focus .chid{
+    align-items:center;
+  }
+  .parent:hover .child::after, .parent:focus .chid::after{
+    display: block;
+  }
+  .parent:hover .back-detail, .parent:focus .back-detail{
+    display: block;
+  }
+  

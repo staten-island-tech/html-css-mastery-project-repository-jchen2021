@@ -7,6 +7,7 @@
 @import"./_circle.scss";
 @import"./flip";
 @import"./_usergallery.scss";
+@import"./_contentblock4.scss";
 
 
 html{
@@ -16,12 +17,21 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-image: url("/dist/css/img/test4.png");
+    background-image: url("/dist/css/img/Shanghai-horizontal.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: conver;
     background-color: black;
+    @include desktop{
+      background-image: url("/dist/css/img/shanghai.jpg");
+    }
+    @include laptop{
+      background-image: url("/dist/css/img/shanghai.jpg");
+    }
+    @include tablet{
+      background-image: url("/dist/css/img/Shanghai-horizontal.jpg");
+    }
 }
 section{
     display: flex;
@@ -59,102 +69,13 @@ section{
 
 .section3{
   height: 100%;
-
+  width: 100%;
   @include flex-collum{
   }
-  @include desktop{
-    @include flex-row{
-      justify-content: space-around;
-    }
-  }
-  @include laptop{
-    @include flex-row{
-      justify-content: space-around;
-    }
-  }
-  @include tablet{
-    @include flex-collum{
-      justify-content: space-around;
-
-    }
-  }
   
+
 }
 
-
-.wrapper{
-  padding: 1rem;
-  width: 100%;
-  align-items: center;
-  margin: 50px auto;
-  height: 100vh;
-}
-.parent {
-  width: 30%;
-  height: 90%;
-  border: 4px solid  #fff;
-  overflow: hidden;
-  position: relative;
-  float: left;
-  display: inline-block;
-  cursor: pointer;
-}
-.child {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all .5s;
-  top: 0;
-  left: 0;
-}
-.child::before {
-  content: "";
-  display: none;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: 
-  rgba(52,73,94,0.75);
-}
-.bg-one {
-  background-image: url("/dist/css/img/roof.jpg");
-}
-.bg-two{
-  background-image: url("/dist/css/img/skyline.jpg");
-}
-.bg-three{
-  background-image: url("/dist/css/img/xiongmao.jpg");
-  align-items: center;
-}
-
-.back-detail{
-  display: none;
-  font-size: 3rem;
-  color: burlywood;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 20%;
-  cursor: pointer;
-}
-
-.parent:hover .child, .parent:focus .chid{
-  transform: scale(1,3);
-}
-.parent:hover .child::before, .parent:focus .chid::before{
-  display: block;
-}
-.parent:hover .back-detail, .parent:focus .back-detail{
-  display: block;
-}
 
 .flip-card {
     background-color: transparent;

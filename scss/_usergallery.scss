@@ -6,27 +6,27 @@
     justify-content: space-around;
     align-items: center;
     @include desktop{
-        height: 100vh;
-        width: auto;
+        height: 100%;
+        width: 100%;
     }
     @include laptop{
-        height: 90vh;
+        height: 100%;
+        width:100%;
     }
 }
 
 .general-header{
-    padding:1%;
     font-size: 2rem;
     color: white;
     text-transform: uppercase;
     text-align: center;
     
     @include desktop{
-        font-size: 5rem;
+        font-size: 7rem;
     }
 
     @include laptop{
-        font-size: 4rem;
+        font-size: 5rem;
     }
     @include tablet{
         font-size: 3rem;
@@ -113,7 +113,7 @@
             width: 30%;
         }
         @include tablet{
-            width:30%;
+            width:70%;
         }
     }
 }
