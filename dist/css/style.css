@@ -93,12 +93,9 @@ h3 {
 
 .pictures {
   width: 95%;
-  height: 85%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,13 +104,12 @@ h3 {
       -ms-flex-direction: row;
           flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (max-width: 2100px) {
   .pictures {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -124,14 +120,13 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 @media (max-width: 1700px) {
   .pictures {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -142,7 +137,8 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -164,6 +160,9 @@ h3 {
 }
 
 .flex-block {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +179,9 @@ h3 {
 
 @media (max-width: 2100px) {
   .flex-block {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -199,36 +201,18 @@ h3 {
   padding: 1%;
   border: 0.3rem solid white;
   background-color: rgba(35, 69, 97, 0.5);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-content: space-around;
-}
-
-@media (max-width: 2100px) {
-  .scenes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (max-width: 1000px) {
@@ -303,25 +287,13 @@ h3 {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 #flex-child6 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 80%;
+  width: 32rem;
 }
 
 .anime-test {
@@ -445,6 +417,12 @@ h3 {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1000px) {
+  .tiles {
+    width: 50%;
+  }
 }
 
 .tiles .tile {
@@ -1008,7 +986,7 @@ h3 {
 }
 
 .bg-one {
-  background-image: url("/dist/css/img/wuha().jpg");
+  background-image: url("/dist/css/img/huanghelou.jpg");
   background-position: center;
 }
 
@@ -1024,15 +1002,28 @@ h3 {
 
 .back-detail {
   display: none;
-  font-size: 3rem;
+  font-size: 1.6rem;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: absolute;
+  text-align: center;
+}
+
+@media (max-width: 2100px) {
+  .back-detail {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 1700px) {
+  .back-detail {
+    font-size: 2rem;
+  }
 }
 
 .parent:hover .child {
-  -webkit-transform: scale(1, 1.1);
-          transform: scale(1, 1.1);
+  -webkit-transform: scale(1, 1.03);
+          transform: scale(1, 1.03);
 }
 
 .parent:focus .chid {
@@ -1058,7 +1049,7 @@ html {
 }
 
 body {
-  background-image: url("/dist/css/img/Shanghai-horizontal.jpg");
+  background-image: url("/dist/css/img/shanghai.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -1092,11 +1083,11 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /* .text{

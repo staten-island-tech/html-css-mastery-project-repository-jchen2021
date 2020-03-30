@@ -17,7 +17,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-image: url("/dist/css/img/Shanghai-horizontal.jpg");
+    background-image: url("/dist/css/img/shanghai.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,10 +34,9 @@ body{
     }
 }
 section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row{
+  
+    }
 }
 
 
