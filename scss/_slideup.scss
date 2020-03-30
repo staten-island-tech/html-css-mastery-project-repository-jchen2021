@@ -10,6 +10,11 @@
 	@include tablet{
 		width:50%;
 	}
+	@include phone{
+		width: 65%;
+	}
+	
+	
   }
 .tiles .tile {
 	display: inline-block;

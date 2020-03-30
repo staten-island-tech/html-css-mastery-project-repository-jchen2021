@@ -10,10 +10,16 @@ $colors:(
 }
 
 $anim-speed: 0.3s;
-$tablet: 1000px;
+$phone: 450px;
+$tablet: 900px;
 $laptop:  1700px;
 $desktop: 2100px;
 
+@mixin phone{
+  @media(max-width: #{$phone}){
+    @content;
+  }
+}
 @mixin tablet{
     @media(max-width: #{$tablet}){
       @content;

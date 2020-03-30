@@ -1,16 +1,30 @@
 @import"./_variables.scss";
 
-.school-logos{
-
-    @include flex-collum{
-    justify-content: space-evenly;
-    align-item:center;
+.intro{
+    width: 100%;
+    
+    align-items: center;
+    @include flex-row{
+    }
+    @include desktop{
+        height: 50%;
+        @include flex-row{
+        }
+    }
+    @include laptop{
+        @include flex-row{
+        }
+    }
+    @include tablet{
+        height: 80%;
+        @include flex-collum{}
     }
 }
 
 .pictures{
     width:95%;
     align-items: center;
+    margin-bottom: 3%;
     @include flex-row{
     
     }
@@ -23,8 +37,12 @@
         }
     }
     @include tablet{
-        @include flex-collum{}
+        height: 55%;
+        @include flex-collum{
+
+        }
     }
+
 
 }
 
@@ -40,18 +58,11 @@
     }
 }
 .scenes{
+    height: 80%;
     @include flex-collum{
-        padding:1%;
-        border:0.3rem solid white;
-        background-color: rgba(color(primary), 0.5);
-    }
 
-    
-    @include tablet{
-        @include flex-row{
-            height:25%;
-        }
     }
+   
     
 }
 #haikyuu{
@@ -63,42 +74,51 @@
     width:50rem;
 }
 .scene1{
-    width: 25rem;
+    width: 34rem;
+    height: 100%;
+    @include desktop{
+        width: 50rem;
+    }
+    @include laptop{
+        width: 40rem;
+    }
+    @include tablet{
+        width:30rem;
+    }
+    @include phone{
+        width: 22rem;
+    }
 }
 .scene2{
-    width:25rem;
+    width: 34rem;
+    height: 100%;
+    @include desktop{
+        width: 50rem;
+    }
+    @include laptop{
+        width: 40rem;
+    }
+    @include tablet{
+        width:30rem;
+    }
+    @include phone{
+        width: 22rem;
+    }
 }
 .scene3{
-    width: 25rem;
-}
-#flex-child1{
-    flex-grow: 1;
-    width:80%;
-}
-#flex-child2{
-    flex-grow:1;
-    width:80%;
-
-}
-#flex-child3{
-    flex-grow: 1;
-    width:80%;
-}
-#flex-child4{
-    flex-grow: 1;
-    width:80%;
-}
-#flex-child5{
-    flex-grow: 1;
-    width:80%;
-
+    width: 34rem;
+    height: 100%;
+    @include desktop{
+        width: 50rem;
+    }
+    @include laptop{
+        width: 40rem;
+    }
     
-    
+    @include tablet{
+        width:30rem;
+    }
+    @include phone{
+        width: 22rem;
+    }    
 }
-
-#flex-child6{
-    flex-grow: 1;
-    width:32rem;
-
-}
-
