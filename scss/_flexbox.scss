@@ -58,7 +58,7 @@
     }
 }
 .scenes{
-    height: 80%;
+    height: 70%;
     @include flex-collum{
 
     }
@@ -75,7 +75,7 @@
 }
 .scene1{
     width: 34rem;
-    height: 100%;
+    height: 80%;
     @include desktop{
         width: 50rem;
     }
@@ -91,7 +91,7 @@
 }
 .scene2{
     width: 34rem;
-    height: 100%;
+    height: 95%;
     @include desktop{
         width: 50rem;
     }
@@ -107,9 +107,9 @@
 }
 .scene3{
     width: 34rem;
-    height: 100%;
+    height: 95%;
     @include desktop{
-        width: 50rem;
+     width: 50rem;
     }
     @include laptop{
         width: 40rem;

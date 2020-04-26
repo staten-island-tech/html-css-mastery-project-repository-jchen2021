@@ -17,20 +17,20 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-image: url("/dist/css/img/shanghai.jpg");
+    background-image: url("../img/shanghai.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: conver;
     background-color: black;
     @include desktop{
-      background-image: url("/dist/css/img/shanghai.jpg");
+      background-image: url("../img/shanghai.jpg");
     }
     @include laptop{
-      background-image: url("/dist/css/img/shanghai.jpg");
+      background-image: url("../img/shanghai.jpg");
     }
     @include tablet{
-      background-image: url("/dist/css/img/Shanghai-horizontal.jpg");
+      background-image: url("../img/Shanghai-horizontal.jpg");
     }
 }
 section{
@@ -50,7 +50,7 @@ section{
   background-color: rgba((color(primary)), 0.7);
   border:solid white;
   @include laptop{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: lighter;
   }
   @include tablet{
@@ -65,7 +65,7 @@ section{
 }
 .word{
   margin:2%;
-  padding: 1%;
+  padding: 1.3%;
   font-family: 'Fredericka the Great', cursive;
   font-size: 2.3rem;
   color:white;
@@ -74,7 +74,8 @@ section{
   background-color: rgba((color(primary)), 0.7);
   border:solid white;
   @include laptop{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    letter-spacing: .15rem;
     font-weight: lighter;
   }
   @include tablet{
@@ -137,7 +138,7 @@ section{
     justify-content: space-between;  
   
 }
-
+/* 
 .flip-card {
     background-color: transparent;
     width: 3rem;
@@ -183,7 +184,7 @@ section{
     height: 5rem;
     transform: rotateY(180deg);
   }
-
+ */
   
 /* 
   font-family: 'Dancing Script', cursive;

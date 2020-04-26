@@ -247,7 +247,7 @@ header {
 }
 
 .scenes {
-  height: 80%;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,7 +273,7 @@ header {
 
 .scene1 {
   width: 34rem;
-  height: 100%;
+  height: 80%;
 }
 
 @media (max-width: 2100px) {
@@ -302,7 +302,7 @@ header {
 
 .scene2 {
   width: 34rem;
-  height: 100%;
+  height: 95%;
 }
 
 @media (max-width: 2100px) {
@@ -331,7 +331,7 @@ header {
 
 .scene3 {
   width: 34rem;
-  height: 100%;
+  height: 95%;
 }
 
 @media (max-width: 2100px) {
@@ -1060,17 +1060,17 @@ header {
 }
 
 .bg-one {
-  background-image: url("/dist/css/img/huanghelou.jpg");
+  background-image: url("../img/huanghelou.jpg");
   background-position: center;
 }
 
 .bg-two {
-  background-image: url("/dist/css/img/red wall.jpg");
+  background-image: url("../img/redwall.jpg");
   background-position: center;
 }
 
 .bg-three {
-  background-image: url("/dist/css/img/xiongmao.jpg");
+  background-image: url("../img/xiongmao.jpg");
   background-position: center;
 }
 
@@ -1123,7 +1123,7 @@ html {
 }
 
 body {
-  background-image: url("/dist/css/img/shanghai.jpg");
+  background-image: url("../img/shanghai.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -1133,19 +1133,19 @@ body {
 
 @media (max-width: 2100px) {
   body {
-    background-image: url("/dist/css/img/shanghai.jpg");
+    background-image: url("../img/shanghai.jpg");
   }
 }
 
 @media (max-width: 1700px) {
   body {
-    background-image: url("/dist/css/img/shanghai.jpg");
+    background-image: url("../img/shanghai.jpg");
   }
 }
 
 @media (max-width: 900px) {
   body {
-    background-image: url("/dist/css/img/Shanghai-horizontal.jpg");
+    background-image: url("../img/Shanghai-horizontal.jpg");
   }
 }
 
@@ -1180,7 +1180,7 @@ section {
 
 @media (max-width: 1700px) {
   .detail {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: lighter;
   }
 }
@@ -1202,7 +1202,7 @@ section {
 
 .word {
   margin: 2%;
-  padding: 1%;
+  padding: 1.3%;
   font-family: 'Fredericka the Great', cursive;
   font-size: 2.3rem;
   color: white;
@@ -1216,7 +1216,8 @@ section {
 
 @media (max-width: 1700px) {
   .word {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    letter-spacing: .15rem;
     font-weight: lighter;
   }
 }
@@ -1305,59 +1306,53 @@ section {
           justify-content: space-between;
 }
 
+/* 
 .flip-card {
-  background-color: transparent;
-  width: 3rem;
-  height: 5rem;
-  border: 1px solid #f1f1f1;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+    background-color: transparent;
+    width: 3rem;
+    height: 5rem;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    align-items: center;
+  }
+  
+  .flip-card-inner {
+    width: 3rem;
+    height: 5rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
 
-.flip-card-inner {
-  width: 3rem;
-  height: 5rem;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
 
-.flip-card:hover .flip-card-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
+  .flip-card-front {
+    width: 3rem;
+    height: 5rem;
+    background-color: #bbb;
+    color: black;
+  }
+  
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.flip-card-front {
-  width: 3rem;
-  height: 5rem;
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  width: 3rem;
-  height: 5rem;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
+  .flip-card-back {
+    width: 3rem;
+    height: 5rem;
+    transform: rotateY(180deg);
+  }
+ */
 /* 
   font-family: 'Dancing Script', cursive;
 
