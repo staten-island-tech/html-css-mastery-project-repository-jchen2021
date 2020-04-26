@@ -114,6 +114,7 @@
         }
         @include tablet{
             width:70%;
+            height: 20%;
         }
         @include phone{
             width: 80%;
