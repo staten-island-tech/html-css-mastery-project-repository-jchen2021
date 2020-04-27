@@ -103,6 +103,7 @@ section{
   text-align: center;
   @include tablet{
     margin-bottom: 0.3rem;
+    font-size: 2rem;
   }
   @include phone{
     font-size: 1.7rem;
@@ -158,6 +159,9 @@ section{
     @include tablet{
       margin-bottom:10%;
       height:95%;
+    }
+    @include phone{
+      margin-bottom: 10%;
     }
     
 }

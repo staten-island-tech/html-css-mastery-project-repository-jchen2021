@@ -20,7 +20,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   header {
     height: 100%;
   }
@@ -54,7 +54,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .title {
     font-size: 5rem;
     letter-spacing: 1.2rem;
@@ -106,7 +106,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .intro {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176,7 +176,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .pictures {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -294,7 +294,8 @@ header {
 
 @media (max-width: 450px) {
   .scenes {
-    height: 75%;
+    height: 60%;
+    margin-bottom: 2%;
   }
 }
 
@@ -317,7 +318,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .scene1 {
     width: 38rem;
   }
@@ -353,7 +354,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .scene2 {
     width: 38rem;
   }
@@ -389,7 +390,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .scene3 {
     width: 38rem;
   }
@@ -429,7 +430,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .food-gallery {
     position: relative;
   }
@@ -848,7 +849,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .general {
     height: 100%;
     width: 100%;
@@ -868,7 +869,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .general-header {
     font-size: 5rem;
   }
@@ -913,7 +914,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .general-gallery {
     height: 60%;
     width: 90%;
@@ -946,7 +947,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .general-gallery .general-gallery img {
     width: 30%;
   }
@@ -1011,7 +1012,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .user-gallery-gallery img .user-gallery-image {
     width: 30%;
   }
@@ -1174,7 +1175,7 @@ header {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .back-detail {
     font-size: 2rem;
   }
@@ -1188,7 +1189,7 @@ header {
 
 @media (max-width: 450px) {
   .back-detail {
-    display: none;
+    font-size: 0.7rem;
   }
 }
 
@@ -1234,7 +1235,7 @@ body {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   body {
     background-image: url("../img/shanghai.jpg");
   }
@@ -1281,7 +1282,7 @@ section {
   border: solid white;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .detail {
     font-size: 1.7rem;
     font-weight: lighter;
@@ -1324,7 +1325,7 @@ section {
   border: solid white;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .word {
     font-size: 1.7rem;
     letter-spacing: .15rem;
@@ -1357,6 +1358,7 @@ section {
 @media (max-width: 900px) {
   .paragraph {
     margin-bottom: 0.3rem;
+    font-size: 2rem;
   }
 }
 
@@ -1449,6 +1451,12 @@ section {
   .section4 {
     margin-bottom: 10%;
     height: 95%;
+  }
+}
+
+@media (max-width: 450px) {
+  .section4 {
+    margin-bottom: 10%;
   }
 }
 
