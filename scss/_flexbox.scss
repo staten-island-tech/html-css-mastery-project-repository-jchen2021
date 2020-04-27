@@ -52,7 +52,7 @@
         }
     }
     @include phone{
-        height: 60%;
+        height: 50%;
 
     }
 
@@ -112,7 +112,7 @@
     }
     @include phone{
         width: 22rem;
-        height: 100%;
+        height:20rem;
      
     }
 }
@@ -136,7 +136,7 @@
     }
     @include phone{
         width: 22rem;
-        height: 100%;
+        height:20rem;
      
     }
 }
@@ -162,7 +162,8 @@
     }
     @include phone{
         width: 22rem;
-        height: 100%;
+        height:20rem;
+
      
     }
 }

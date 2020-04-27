@@ -32,6 +32,9 @@ body{
     @include tablet{
       background-image: url("../img/Shanghai-horizontal.jpg");
     }
+    @include phone{
+      background-image: url("../img/Shanghai-horizontal.jpg");
+    }
 }
 section{
     @include flex-row{
