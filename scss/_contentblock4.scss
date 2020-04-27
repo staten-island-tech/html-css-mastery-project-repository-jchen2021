@@ -76,6 +76,12 @@
     @include laptop{
       font-size: 2rem;
     }
+    @include tablet{
+      display: none;
+    }
+    @include phone{
+      display: none;
+    }
   }
   
   .parent:hover .child{

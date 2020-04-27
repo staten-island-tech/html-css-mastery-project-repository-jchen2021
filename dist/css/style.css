@@ -1180,6 +1180,18 @@ header {
   }
 }
 
+@media (max-width: 900px) {
+  .back-detail {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .back-detail {
+    display: none;
+  }
+}
+
 .parent:hover .child {
   -webkit-transform: scale(1, 1.03);
           transform: scale(1, 1.03);
