@@ -70,6 +70,7 @@
 }
 .scenes{
     height: 50%;
+    
     @include flex-collum{
 
     }
@@ -79,14 +80,14 @@
    
     
 }
-#haikyuu{
+/* #haikyuu{
     font-size: 2rem;
     border-style: solid;
     border-color: rgba(color(primary),0.6);
     padding:3rem;
     text-align: center;
     width:50rem;
-}
+} */
 
 .scene1{
     width: 34rem;
@@ -160,4 +161,37 @@
         height: 100%;
      
     }
+}
+
+.food{
+    @include desktop{
+        position: absolute;
+        outline-offset: 0.8rem;
+        transition: all 0.3s;
+    }
+    @include laptop{
+    position: absolute;
+    outline-offset: 0.5rem;
+    transition: all 0.3s;
+    }
+    
+}
+.food-gallery{
+    @include desktop{
+        position: relative;
+    }
+    @include laptop{
+        position: relative;
+    }
+    
+}
+
+.food:hover{
+    transform: scale(1.1);
+    outline:3rem solid rgba(color(secondary),0.7);
+    z-index: 2;
+}
+.food-gallery:hover .food-gallery:not(:hover){
+    transform: scale(0.8);
+    opacity:0.3;
 }
