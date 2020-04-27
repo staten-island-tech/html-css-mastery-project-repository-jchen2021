@@ -12,7 +12,8 @@ $colors:(
 $anim-speed: 0.3s;
 $phone: 450px;
 $tablet: 900px;
-$laptop:  1700px;
+$ipad:1100px;
+$laptop:  1600px;
 $desktop: 2100px;
 
 @mixin phone{
@@ -24,6 +25,12 @@ $desktop: 2100px;
     @media(max-width: #{$tablet}){
       @content;
     }
+  }
+  @mixin ipadHorizontal {
+    @media(max-width:#{$ipad}){
+      @content;
+    }
+    
   }
   @mixin laptop{
     @media(max-width: #{$laptop}){
