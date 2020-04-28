@@ -574,7 +574,7 @@ header {
 
 @media (max-width: 450px) {
   .tiles {
-    width: 65%;
+    width: 60%;
   }
 }
 
