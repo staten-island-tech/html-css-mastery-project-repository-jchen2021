@@ -339,7 +339,7 @@ header {
 @media (max-width: 450px) {
   .scene1 {
     width: 22rem;
-    height: 20rem;
+    height: 15rem;
   }
 }
 
@@ -375,7 +375,7 @@ header {
 @media (max-width: 450px) {
   .scene2 {
     width: 22rem;
-    height: 20rem;
+    height: 15rem;
   }
 }
 
@@ -411,7 +411,7 @@ header {
 @media (max-width: 450px) {
   .scene3 {
     width: 22rem;
-    height: 20rem;
+    height: 15rem;
   }
 }
 
