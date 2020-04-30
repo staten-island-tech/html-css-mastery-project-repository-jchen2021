@@ -30,7 +30,7 @@ body{
       background-image: url(../img/Shanghai-horizontal.jpg);
     }@include phone{
       background-image: url(../img/Shanghai-horizontal.jpg);
-      background-attachment: scroll;
+      background-attachment: initial;
     }
     
     
