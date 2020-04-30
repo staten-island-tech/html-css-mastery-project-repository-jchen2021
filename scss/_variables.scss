@@ -21,7 +21,6 @@ $desktop: 2100px;
   @media(max-width: #{$phone}){
     @content;
   }
-  $.backstretch("../img/Shanghai-horizontal.jpg");
 }
 @mixin tablet{
     @media(max-width: #{$tablet}){
