@@ -22,17 +22,18 @@ body{
     background-position: center;
     background-size: conver;
     background-color: black;
-    @include desktop{
-      background-image: url("../img/shanghai.jpg");
-    }
-    @include laptop{
-      background-image: url("../img/shanghai.jpg");
+    @include phone{
+      background-image: url(../img/Shanghai-horizontal.jpg);
     }
     @include tablet{
-      background-image: url("../img/Shanghai-horizontal.jpg");
+      background-image: url(../img/Shanghai-horizontal.jpg);
     }
-    @include phone{
-      background-image: url("../img/Shanghai-horizontal.jpg");
+    @include laptop{
+      background-image: url(../img/shanghai.jpg);
+    }
+    
+    @include desktop{
+      background-image: url(../img/shanghai.jpg);
     }
 }
 section{
