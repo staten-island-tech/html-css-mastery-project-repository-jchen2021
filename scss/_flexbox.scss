@@ -30,7 +30,7 @@
     width:95%;
     align-items: center;
     margin-bottom: 3%;
-    @include flex-row{
+    @include flex-collum{
     
     }
     
@@ -50,7 +50,7 @@
         }
     }
     @include tablet{
-        height: 50%;
+        height: 40%;
         margin-top: 3rem;
         @include flex-collum{
 
@@ -73,13 +73,23 @@
         }
     }
 }
+.food-history{
+    @include desktop{
+    margin-top: -10%;
+    }
+    @include laptop{
+        margin-top: 0.5%;
+    }
+}
 .scenes{
-    height: 50%;
+    height: 100%;
     
     @include flex-collum{
-
+    justify-content: space-evenly;
     }
-    
+    @include tablet{
+        height: 50%;
+    }
     @include phone {
         height:60%;
         margin-bottom: 2%;
@@ -99,7 +109,6 @@
 .scene1{
     width: 34rem;
     height: 30rem;
-   
     @include desktop{
         width: 45rem;
         
@@ -112,7 +121,7 @@
         width: 30rem;
     }
     @include tablet{
-        height:20rem;
+        height:17rem;
   
     }
     @include phone{
@@ -138,7 +147,7 @@
         width: 30rem;
     }
     @include tablet{
-        height:20rem;
+        height:16.5rem;
   
     }
     @include phone{
@@ -165,7 +174,7 @@
     
     
     @include tablet{
-        height:20rem;
+        height:16.5rem;
   
     }
     @include phone{

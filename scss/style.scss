@@ -17,20 +17,25 @@ html{
 }
 body{
     background-attachment: fixed;
-    background-repeat: no-repeat;
+        
+    @include desktop{
+      background-image: url(../img/shanghai.jpg);
+      background-repeat: no-repeat;
     background-position: center;
     background-size: conver;
     background-color: black;
-    
-    @include desktop{
-      background-image: url(../img/shanghai.jpg);
     }@include laptop{
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: conver;
+    background-color: black;
       background-image: url(../img/shanghai.jpg);
     }@include tablet{
       background-image: url(../img/Shanghai-horizontal.jpg);
+      background-size: 100% 100%;
     }@include phone{
       background-image: url(../img/Shanghai-horizontal.jpg);
-      background-size: 100% 100%;;
+      background-size: 100% 100%;
     }
     
     
@@ -52,12 +57,13 @@ section{
   text-align: center;
   background-color: rgba((color(primary)), 0.7);
   border:solid white;
+  top:5rem;
   @include laptop{
     font-size: 1.7rem;
     font-weight: lighter;
   }@include tablet{
-    margin-top: -10rem;
-    font-size: 1rem;
+    margin-top: -4rem;
+    font-size: 0.7rem;
     font-weight: lighter;
     text-align: center;
   }  
@@ -102,10 +108,10 @@ section{
   font-size: 2.3rem;
   color:white;
   text-align: center;
+  }
+  
   @include tablet{
     margin-bottom: 0.3rem;
-    font-size: 2rem;
-  }@include phone{
     font-size: 1.7rem;
   }
   
@@ -141,12 +147,14 @@ section{
 .section3{
   height: 100vh;
   width: 100%;
+  padding-bottom: 2.5%;
   @include flex-collum{
   }
   
 }
 
 .section2{
+  background-color:rgba((color(primary)), 0.3);
   padding-bottom: 5%;
   height: 100vh;
   @include flex-collum{
@@ -154,19 +162,9 @@ section{
   
 }
 .section4{
-  padding-top: 5%;
   height: 100vh;
   @include flex-collum{
   } 
-  @include phone{
-      margin-bottom: 10%;
-  }
-    @include tablet{
-      margin-bottom:10%;
-      height:95%;
-    }
-    
-    
 }
 /* 
 .flip-card {

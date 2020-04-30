@@ -150,10 +150,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -215,7 +215,7 @@ header {
 
 @media (max-width: 900px) {
   .pictures {
-    height: 50%;
+    height: 40%;
     margin-top: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -276,8 +276,23 @@ header {
   }
 }
 
+@media (max-width: 2100px) {
+  .food-history {
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .food-history {
+    margin-top: 0.5%;
+  }
+}
+
 .scenes {
-  height: 50%;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,6 +305,12 @@ header {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 900px) {
+  .scenes {
+    height: 50%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -332,7 +353,7 @@ header {
 
 @media (max-width: 900px) {
   .scene1 {
-    height: 20rem;
+    height: 17rem;
   }
 }
 
@@ -368,7 +389,7 @@ header {
 
 @media (max-width: 900px) {
   .scene2 {
-    height: 20rem;
+    height: 16.5rem;
   }
 }
 
@@ -404,7 +425,7 @@ header {
 
 @media (max-width: 900px) {
   .scene3 {
-    height: 20rem;
+    height: 16.5rem;
   }
 }
 
@@ -1191,20 +1212,24 @@ html {
 
 body {
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: conver;
-  background-color: black;
 }
 
 @media (max-width: 2100px) {
   body {
     background-image: url(../img/shanghai.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: conver;
+    background-color: black;
   }
 }
 
 @media (max-width: 1700px) {
   body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: conver;
+    background-color: black;
     background-image: url(../img/shanghai.jpg);
   }
 }
@@ -1212,6 +1237,7 @@ body {
 @media (max-width: 900px) {
   body {
     background-image: url(../img/Shanghai-horizontal.jpg);
+    background-size: 100% 100%;
   }
 }
 
@@ -1249,6 +1275,7 @@ section {
   text-align: center;
   background-color: rgba(35, 69, 97, 0.7);
   border: solid white;
+  top: 5rem;
 }
 
 @media (max-width: 1700px) {
@@ -1260,8 +1287,8 @@ section {
 
 @media (max-width: 900px) {
   .detail {
-    margin-top: -10rem;
-    font-size: 1rem;
+    margin-top: -4rem;
+    font-size: 0.7rem;
     font-weight: lighter;
     text-align: center;
   }
@@ -1317,22 +1344,18 @@ section {
   }
 }
 
-.paragraph {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 2.3rem;
-  color: white;
-  text-align: center;
+@media (max-width: 1700px) {
+  .paragraph {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+  }
 }
 
 @media (max-width: 900px) {
   .paragraph {
     margin-bottom: 0.3rem;
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .paragraph {
     font-size: 1.7rem;
   }
 }
@@ -1368,6 +1391,7 @@ section {
 .section3 {
   height: 100vh;
   width: 100%;
+  padding-bottom: 2.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1383,6 +1407,7 @@ section {
 }
 
 .section2 {
+  background-color: rgba(35, 69, 97, 0.3);
   padding-bottom: 5%;
   height: 100vh;
   display: -webkit-box;
@@ -1400,7 +1425,6 @@ section {
 }
 
 .section4 {
-  padding-top: 5%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1414,19 +1438,6 @@ section {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-@media (max-width: 450px) {
-  .section4 {
-    margin-bottom: 10%;
-  }
-}
-
-@media (max-width: 900px) {
-  .section4 {
-    margin-bottom: 10%;
-    height: 95%;
-  }
 }
 
 /* 
