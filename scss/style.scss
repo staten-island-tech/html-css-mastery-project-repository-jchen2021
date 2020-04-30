@@ -104,8 +104,9 @@ section{
 }
 
 .paragraph{
+  @include laptop{
   font-family: 'Fredericka the Great', cursive;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   color:white;
   text-align: center;
   }
