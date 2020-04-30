@@ -1218,7 +1218,7 @@ body {
 @media (max-width: 450px) {
   body {
     background-image: url(../img/Shanghai-horizontal.jpg);
-    background-attachment: initial;
+    background-size: 100% 100%;
   }
 }
 
