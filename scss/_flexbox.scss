@@ -4,17 +4,7 @@
     width: 98%;
     
     align-items: center;
-    @include flex-row{
-    }
-    @include tablet{
-        height: 70%;
-        @include flex-collum{
-    }
-    }
-    
-    @include laptop{
-        @include flex-row{
-        }
+    @include flex-collum{
     }
     @include desktop{
         height: 50%;
@@ -22,6 +12,18 @@
         justify-content: space-evenly;
         }
     }
+    @include laptop{
+        @include flex-row{
+        }
+    }
+    @include tablet{
+        height: 70%;
+        @include flex-collum{
+    }
+    }
+    
+    
+    
 }
 
 .pictures{
@@ -31,23 +33,7 @@
     @include flex-row{
     
     }
-    @include phone{
-        height: 50%;
-    }
-    @include tablet{
-        height: 50%;
-        margin-top: 3rem;
-        @include flex-collum{
-
-        }
-    }
     
-
-    @include ipadHorizontal{
-        @include flex-row{
-            justify-content: space-evenly;
-        }
-    }
     @include desktop{
         @include flex-row{
         }
@@ -56,6 +42,22 @@
         @include flex-row{
     
         }
+    }
+
+    @include ipadHorizontal{
+        @include flex-row{
+            justify-content: space-evenly;
+        }
+    }
+    @include tablet{
+        height: 50%;
+        margin-top: 3rem;
+        @include flex-collum{
+
+        }
+    }
+    @include phone{
+        height: 50%;
     }
 
 }
@@ -97,76 +99,79 @@
 .scene1{
     width: 34rem;
     height: 30rem;
-   @include phone{
-        width: 22rem;
-        height:15rem;
-     
-    } 
-    @include tablet{
-        height:20rem;
-  
-    }
-    @include ipadHorizontal{
-        width: 30rem;
+   
+    @include desktop{
+        width: 45rem;
+        
     }
     @include laptop{
         width: 38rem;
     
     }
-    @include desktop{
-        width: 45rem;
-        
+    @include ipadHorizontal{
+        width: 30rem;
     }
+    @include tablet{
+        height:20rem;
+  
+    }
+    @include phone{
+        width: 22rem;
+        height:15rem;
+    } 
+    
     
 }
 .scene2{
     width: 34rem;
     height: 30rem;
-    @include phone{
-        width: 22rem;
-        height:15rem;
-     
-    } 
-    @include tablet{
-        height:20rem;
-  
-    }
-    @include ipadHorizontal{
-        width: 30rem;
+   
+    @include desktop{
+        width: 45rem;
+        
     }
     @include laptop{
         width: 38rem;
     
     }
-    @include desktop{
-        width: 45rem;
-        
+    @include ipadHorizontal{
+        width: 30rem;
     }
+    @include tablet{
+        height:20rem;
+  
+    }
+    @include phone{
+        width: 22rem;
+        height:15rem;
+    } 
 }
 
 .scene3{
     width: 34rem;
     height: 30rem;
-    @include phone{
-        width: 22rem;
-        height:15rem;
-     
-    } 
-    @include tablet{
-        height:20rem;
-  
-    }
-    @include ipadHorizontal{
-        width: 30rem;
+   
+    @include desktop{
+        width: 45rem;
+        
     }
     @include laptop{
         width: 38rem;
     
     }
-    @include desktop{
-        width: 45rem;
-        
+    @include ipadHorizontal{
+        width: 30rem;
     }
+    
+    
+    @include tablet{
+        height:20rem;
+  
+    }
+    @include phone{
+        width: 22rem;
+        height:15rem;
+    } 
 }
 
 
@@ -183,9 +188,7 @@
     @include laptop{
         position: relative;
     }
-    @include desktop{
-        position: relative;
-    }
+    
     
 
 }

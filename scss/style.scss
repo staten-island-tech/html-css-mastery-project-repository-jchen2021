@@ -1,7 +1,6 @@
 @import"./_variables.scss";
 @import"./_header.scss";
 @import"./_flexbox.scss";
-@import"./_hover1.scss";
 @import"./_zoomin-box.scss";
 @import"./_slideup.scss";
 @import"./_circle.scss";
@@ -19,24 +18,23 @@ html{
 body{
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: conver;
     background-color: black;
-    @include phone{
-      background-image: url(../img/Shanghai-horizontal.jpg);
-      background-size: conver;
-      min-height: 100vh;
-    }
-    @include tablet{
-      background-image: url(../img/Shanghai-horizontal.jpg);
-    }
-    @include laptop{
-      background-image: url(../img/shanghai.jpg);
-    }
     
     @include desktop{
       background-image: url(../img/shanghai.jpg);
+    }@include laptop{
+      background-image: url(../img/shanghai.jpg);
+    }@include tablet{
+      background-image: url(../img/Shanghai-horizontal.jpg);
+    }@include phone{
+      background-image: url(../img/Shanghai-horizontal.jpg);
+      min-height: 100vh;
     }
+    
+    
+    
 }
 section{
     @include flex-row{
@@ -54,22 +52,21 @@ section{
   text-align: center;
   background-color: rgba((color(primary)), 0.7);
   border:solid white;
-  @include phone{
-    display: none;
-  }
-  @include tablet{
+  @include laptop{
+    font-size: 1.7rem;
+    font-weight: lighter;
+  }@include tablet{
     margin-top: -10rem;
     font-size: 1rem;
     font-weight: lighter;
     text-align: center;
-  }
+  }  
   @include ipadHorizontal{
     font-size: 1.35rem;
     letter-spacing: initial;
   }
-  @include laptop{
-    font-size: 1.7rem;
-    font-weight: lighter;
+  @include phone{
+    display: none;
   }
   
 }
@@ -83,9 +80,10 @@ section{
   text-align: center;
   background-color: rgba((color(primary)), 0.7);
   border:solid white;
-  
-  @include phone{
-    display: none;
+  @include laptop{
+    font-size: 1.7rem;
+    letter-spacing: .15rem;
+    font-weight: lighter;
   }
   @include tablet{
     font-size: 1.1rem;
@@ -93,11 +91,10 @@ section{
     font-weight: lighter;
     text-align: center;
   }
-  @include laptop{
-    font-size: 1.7rem;
-    letter-spacing: .15rem;
-    font-weight: lighter;
+  @include phone{
+    display: none;
   }
+  
 }
 
 .paragraph{
@@ -105,13 +102,13 @@ section{
   font-size: 2.3rem;
   color:white;
   text-align: center;
-  @include phone{
-    font-size: 1.7rem;
-  }
   @include tablet{
     margin-bottom: 0.3rem;
     font-size: 2rem;
+  }@include phone{
+    font-size: 1.7rem;
   }
+  
   
 }
 
@@ -161,13 +158,14 @@ section{
   height: 100vh;
   @include flex-collum{
   } 
+  @include phone{
+      margin-bottom: 10%;
+  }
     @include tablet{
       margin-bottom:10%;
       height:95%;
     }
-    @include phone{
-      margin-bottom: 10%;
-    }
+    
     
 }
 /* 
