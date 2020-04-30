@@ -25,6 +25,7 @@ body{
     @include phone{
       background-image: url(../img/Shanghai-horizontal.jpg);
       background-size: conver;
+      min-height: 100vh;
     }
     @include tablet{
       background-image: url(../img/Shanghai-horizontal.jpg);
