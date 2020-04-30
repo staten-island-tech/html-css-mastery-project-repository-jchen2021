@@ -16,10 +16,12 @@ $ipad:1100px;
 $laptop:  1700px;
 $desktop: 2100px;
 
+
 @mixin phone{
   @media(max-width: #{$phone}){
     @content;
   }
+  $.backstretch("../img/Shanghai-horizontal.jpg");
 }
 @mixin tablet{
     @media(max-width: #{$tablet}){
