@@ -19,11 +19,12 @@ html{
 body{
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: conver;
     background-color: black;
     @include phone{
       background-image: url(../img/Shanghai-horizontal.jpg);
+      background-size: conver;
     }
     @include tablet{
       background-image: url(../img/Shanghai-horizontal.jpg);
